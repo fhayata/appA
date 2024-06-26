@@ -13,7 +13,7 @@ jobs:
         include:
           - name: appA
             directory: ./
-            image: hayataf/appA
+            image: hayataf/app-a
 
 
     steps:
