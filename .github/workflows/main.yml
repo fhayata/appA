@@ -27,8 +27,8 @@ jobs:
       - name: Connect to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_TOKEN }}
       # Nous permet de construire et pousser notre image dans le repertoire Docker Hub 
       - name: Build and push the image ${{ matrix.name }}
         uses: docker/build-push-action@v4
